@@ -1,0 +1,12 @@
+body{
+    background-color: #f3e9f1 !important;
+}
+
+.nav-site ul li a{
+    color: #261624;
+}
+
+div{
+    border: 1px solid #261624;
+    text-align: center;
+}
