@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--========== Style ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
         <link rel="stylesheet" href="style/style.css">
@@ -44,10 +45,44 @@
         <!-- MAIN CONTENT -->
 
         <main>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-4" id="cardContentText">
+            <div class="container h-100">
+                <div class="row align-items-center h-100 justify-content-center">
+                    <div class="col-lg-4 col-12 ">
+                        <div id="cartContentIcon" class="h1 text-center"></div>
+                        <div id="cartContentText" class="h2 text-center"></div>
+                    </div>
+                </div>
 
+                <div class="row h-100 justify-content-center">
+                    <div class="col-12 text-center" id="cartContact">
+                        <form>
+                            <div class="form-row">
+                              <div class="form-group col-lg-6">
+                                <label for="firstName">Prénom</label>
+                                <input type="text" class="form-control" required pattern="[a-z]">
+                              </div>
+                              <div class="form-group col-lg-6">
+                                <label for="lastName">Nom</label>
+                                <input type="text" class="form-control" required>
+                              </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-lg-6">
+                                    <label for="Address">Adresse</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                              <div class="form-group col-lg-6">
+                                    <label for="city">Ville</label>
+                                    <input type="text" class="form-control" required>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="mail">Adresse Mail</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Commander</button>
+                          </form>
                     </div>
                 </div>
             </div>
@@ -56,7 +91,7 @@
         <!-- FOOTER -->
 
         <footer>
-            <nav class="row justify-content-center text-center fixed-bottom">
+            <nav class="row justify-content-center text-center mt-5">
                 <ul class="list-inline">
                     <li class="nav-item list-inline-item">
                         <a href="#" class="nav-link">Mentions Légales</a>
@@ -78,24 +113,6 @@
 
 <!--    SCRIPT PROVISOIRE      -->
 
-    <script>
-
-        let card = 1;
-        
-        if(card === 0){
-            const cardEmpty = document.getElementById('cardContentText');
-            cardEmpty.innerHTML = "<p>Votre panier est vide !<p>";
-        }
-        else if(card === 1){
-            const cardFull = document.getElementById('cardContentText');
-            cardFull.innerHTML = "<p>Voici votre panier<p>";
-
-        }
-        else{
-            const cardError = document.getElementById('cardContentText');
-            cardError.innerHTML = "<p>Une Erreur est survenue <br>Merci de contactez le service client<br>si le problème persiste";
-        }
-
-    </script>
+    <script src="js/panier.js"> </script>
 
 </html>
