@@ -48,22 +48,14 @@
 
     <main>
         <div class="container">
-            <div class="row" id="templateArticle">
-                <div class="col-md-12">
-                    <div class="card">
-                        <img src="" alt="" class="card-img" id="produitImage">
-                        <h5 class="card-header" id="produitName">Feature</h5>
-                            <div class="card-body">
-                                <h5 class="card-title" id="produitPrice">Special title treatment</h5>
-                                <p class="card-text" id="produitDescription">With supporting text below as a natural lead-in to additional content.</p>
-                                    <div>
-                                        <label for="" class="form-check-label"></label>
-                                        <input type="checkbox" class="form-check-input"> 
-                                    </div>
-                                <a href="#" class="btn btn-primary">Ajouter au panier</a>
-                            </div>
-                    </div>
-                </div>
+            <div class="alert alert-success" id="addSuccess" role="alert">
+                L'article à bien été ajouté au panier !
+            </div>
+            <div class="alert alert-danger" id="alreadyInCart" role="alert">
+                L'article que vous souhaitez est déjà dans le panier !
+            </div>
+            <div class="row h-100 justify-content-center" id="templateArticle">
+
             </div>
         </div>
     </main>
