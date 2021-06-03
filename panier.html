@@ -87,29 +87,29 @@
                             <div class="form-row">
                               <div class="form-group col-lg-6">
                                 <label for="firstName">Prénom</label>
-                                <input type="text" class="form-control" required pattern="[a-z]">
+                                <input type="text" class="form-control" id="formFirstName" required pattern="[a-zA-Z]+">
                               </div>
                               <div class="form-group col-lg-6">
                                 <label for="lastName">Nom</label>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" id="formLastName" required pattern="[a-zA-Z]+">
                               </div>
                             </div>
 
                             <div class="form-row">
                                 <div class="form-group col-lg-6">
                                     <label for="Address">Adresse</label>
-                                    <input type="text" class="form-control" required>
+                                    <input type="text" class="form-control" id="formAdress" required pattern="[a-zA-Z0-9 ]*">
                                 </div>
                               <div class="form-group col-lg-6">
                                     <label for="city">Ville</label>
-                                    <input type="text" class="form-control" required>
+                                    <input type="text" class="form-control"  id="formCity"required pattern="[a-zA-Z0-9 ]*">
                               </div>
                             </div>
                             <div class="form-group">
                                 <label for="mail">Adresse Mail</label>
-                                <input type="email" class="form-control" required>
+                                <input type="email" class="form-control" id="formMail" required pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}">
                             </div>
-                            <button type="submit" class="btn btn-primary">Commander</button>
+                                <button type="submit" class="btn btn-primary" id="btnSend"><a href="resume.html">Commander</a></button>
                           </form>
                     </div>
                 </div>
@@ -119,16 +119,22 @@
         <!-- FOOTER -->
 
         <footer>
-            <nav class="row justify-content-center text-center mt-5">
-                <ul class="list-inline">
-                    <li class="nav-item list-inline-item">
-                        <a href="#" class="nav-link">Mentions Légales</a>
-                    </li>
-                    <li class="nav-item list-inline-item">
-                        <a href="#" class="nav-link">Plan du site</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <nav class="row justify-content-center text-center">
+                            <ul class="list-inline">
+                                <li class="nav-item list-inline-item">
+                                    <a href="#" class="nav-link">Mentions Légales</a>
+                                </li>
+                                <li class="nav-item list-inline-item">
+                                    <a href="#" class="nav-link">Plan du site</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </footer>
 
     </body>

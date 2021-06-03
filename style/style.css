@@ -1,9 +1,17 @@
+/* Grey : #3D3A3C */
 
 body{
+    font-family: 'Roboto', sans-serif;
     background-color: #f3e9f1 
 }
 
 /* == Header == */
+
+
+header{
+    margin: 0;
+    box-shadow: 1px 1px 10px black;
+}
 
 .card img{
 object-fit: cover;
@@ -28,10 +36,36 @@ a{
     visibility: hidden;
 }
 
+
+/* -= BODY =- */
+
+.title{
+    margin-top: 20px;
+}
+
+.articleContent{
+    background-color: #3D3A3C;
+}
+
+.card{
+    background: #f3e9f1;
+}
+
+.card .btn{
+    background-color: #261624;
+    color: #f3e9f1;
+}
+
+.carousel img{
+    object-fit: cover;
+    height: 550px;
+    width: 100%;
+}
+
 /** FOOTER **/
 
 footer{
-    background-color: white;
+    background-color: #261624;
 }
 
 
